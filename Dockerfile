@@ -14,4 +14,4 @@ RUN dotnet publish -c Release -o /app --use-current-runtime --self-contained fal
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
 COPY --from=build /app .
-ENTRYPOINT ["dotnet", "aspnetapp.dll"]
+ENTRYPOINT ["dotnet", "TodoApi.dll"]

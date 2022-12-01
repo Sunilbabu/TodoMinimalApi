@@ -1,2 +1,2 @@
-docker build -t todoapi_Swagger .
-docker run -it --rm -p 5000:80 --name aspnetcore_sample todoapi_Swagger
+docker build -t todoapi_swagger .
+docker run -it --rm -p 5001:80 --name apiv1_sample todoapi_swagger
